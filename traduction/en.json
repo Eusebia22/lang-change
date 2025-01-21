@@ -1,0 +1,28 @@
+{
+    "header":{
+        "product": "Products",
+        "contact": "Contact",
+        "inscrire": "Register"
+    },  
+    "index":{
+        "title": "Our Products",
+        "description": "We offer handmade soaps and colorful candles."
+    },
+    "contact":{
+        "contactitle": "Contact Us",
+        "cname": "Name:",
+        "csurname": "Surname:",
+        "caddress": "Address:",
+        "cmessage": "Message:",
+        "csubmit": "Send"
+    },
+    "inscrire":{
+        "registertitle": "Register",
+        "name": "Name:",
+        "surname": "Surname:",
+        "address": "Address:",
+        "phone": "Phone:",
+        "email": "Email:",
+        "submit": "Submit"
+    }  
+}

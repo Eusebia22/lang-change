@@ -1,0 +1,10 @@
+{
+    "registertitle": "Registrarse",
+    "name": "Nombre:",
+    "surname": "Apellido:",
+    "address": "Dirección:",
+    "phone": "Teléfono:",
+    "email": "Correo electrónico:",
+    "submit": "Enviar"
+    
+}

@@ -1,0 +1,28 @@
+{
+    "index":{
+     "product": "Prodotti",
+      "contact": "Contatto",
+      "inscrire": "Registrati",
+      "title": "I nostri prodotti",
+      "description": "Saponette fatte a mano in varie forme."
+    },
+    "contact":{
+        "contactitle": "Contattaci",
+        "contact-direct": "Chiama il supporto direttamente",
+        "cname": "Nome:",
+        "csurname": "Cognome:",
+        "caddress": "Indirizzo:",
+        "cmessage": "Messaggio:",
+        "csubmit": "Invia" 
+    },
+    "inscrire":{
+        "registertitle": "Registrati",
+        "name": "Nome:",
+        "surname": "Cognome:",
+        "address": "Indirizzo:",
+        "phone": "Telefono:",
+        "email": "Email:",
+        "submit": "Invia"
+    }
+   
+}

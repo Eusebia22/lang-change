@@ -1,0 +1,9 @@
+{
+        "registertitle": "S'inscrire",
+        "name": "Nom:",
+        "surname": "Prénom:",
+        "address": "Adresse:",
+        "phone": "Téléphone:",
+        "email": "Email:",
+        "submit": "Valider"
+}

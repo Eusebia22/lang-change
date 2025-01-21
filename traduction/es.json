@@ -1,0 +1,28 @@
+{
+    "index": {
+      "product": "Productos",
+      "contact": "Contacto",
+      "inscrire": "Registrarse",
+      "title": "Nuestros productos",
+      "description": "Jabones artesanales en varias formas"
+    },
+    "contact":{
+        "contactitle": "Contáctenos",
+        "contact-direct": "Llame al soporte directamente",
+        "cname": "Nombre:",
+        "csurname": "Apellido:",
+        "caddress": "Dirección:",
+        "cmessage": "Mensaje:",
+        "csubmit": "Enviar"
+    },
+    "inscrire":{
+            "registertitle": "Registrarse",
+            "name": "Nombre:",
+            "surname": "Apellido:",
+            "address": "Dirección:",
+            "phone": "Teléfono:",
+            "email": "Correo electrónico:",
+            "submit": "Enviar"   
+    }
+    
+}

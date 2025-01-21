@@ -1,0 +1,11 @@
+{
+    "nav": {
+      "product": "Productos",
+      "contact": "Contacto",
+      "inscrire": "Registrarse"
+    },
+    "content": {
+      "title": "Nuestros productos",
+      "description": "Jabones artesanales en varias formas"
+    }
+}

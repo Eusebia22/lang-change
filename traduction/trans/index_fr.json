@@ -1,0 +1,11 @@
+{
+    "nav": {
+      "product": "Produits",
+      "contact": "Contact",
+      "inscrire": "S'inscrire"
+    },
+    "content": {
+      "title": "Nos produits",
+      "description": "Savons faits main en différentes formes"
+    }
+}

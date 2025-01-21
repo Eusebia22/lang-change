@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Index</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <select id="language-select">
+      <option value="en">English</option>
+      <option value="fr">Français</option>
+      <option value="es">Español</option>
+      <option value="it">Italiano</option>
+    </select>
+    <nav>
+      <ul>
+      <li id="nav-iproduct">Products</li>
+      <li id="nav-icontact"><a href="contact.html">Contact</a></li>
+      <li id="nav-iinscrire"><a href="inscrire.html">Inscrire</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main id="content">
+    <h1 id="product-title">Weelcome to Our Product </h1>
+    <p id="product-description">Description of the Product.</p>
+  </main>
+  <script src="js/script.js" defer></script>
+</body>
+</html>
+
+<!-- 
+Étape 1 : Configuration de votre projet
+Créer la structure des dossiers :
+
+bash
+
+mkdir site-multilingue
+cd site-multilingue
+mkdir css js traduction
+touch index.html contact.html inscription.html css/style.css js/script.js
+Créer les fichiers JSON pour les traductions :
+
+Naviguez dans le dossier traduction :
+bash
+
+
+cd traduction
+touch index_en.json index_fr.json index_es.json index_it.json
+touch contact_en.json contact_fr.json contact_es.json contact_it.json
+touch inscrire_en.json inscrire_fr.json inscrire_es.json inscrire_it.json
+cd ..
+Étape 2 : Contenu des fichiers
+
+ project/
+├── index.html
+├── contact.html
+├── inscription.html
+├── style.css
+├── script.js
+├── translations/
+│   ├── index_en.json
+│   ├── index_fr.json
+│   ├── index_es.json
+│   ├── index_it.json
+│   ├── contact_en.json
+│   ├── contact_fr.json
+│   ├── contact_es.json
+│   ├── contact_it.json
+│   ├── inscrire_en.json
+│   ├── inscrire_fr.json
+│   ├── inscrire_es.json
+│   ├── inscrire_it.json
+└── package.json
+
+Étape 3 : Configuration du serveur Node.js
+Initialiser le projet Node.js :
+
+bash
+
+npm init -y
+npm install express
+Créer le fichier serveur server.js :
+
+javascript
+
+const express = require('express');
+const app = express();
+
+app.use(express.static(__dirname));
+
+app.listen(3000, () => {
+  console.log("Server running on http://localhost:3000");
+});
+Lancer le serveur :
+
+bash
+
+node server.js
+Accéder à votre site :
+
+Ouvrez http://localhost:3000 dans votre navigateur. -->
+

@@ -1,0 +1,9 @@
+{
+    "registertitle": "Registrati",
+    "name": "Nome:",
+    "surname": "Cognome:",
+    "address": "Indirizzo:",
+    "phone": "Telefono:",
+    "email": "Email:",
+    "submit": "Invia"
+}

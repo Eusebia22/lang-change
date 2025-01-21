@@ -1,0 +1,26 @@
+{
+    "index":{
+            "product": "Produits",
+            "contact": "Contact",
+            "inscrire": "S'inscrire",
+            "title": "Nos produits",
+            "description": "Savons faits main en différentes formes"
+    },
+    "contact":{
+        "contactitle": "Nous contacter",
+        "cname": "Nom:",
+        "csurname": "Prénom:",
+        "caddress": "Adresse:",
+        "cmessage": "Message:",
+        "csubmit": "Envoyer"
+    },
+    "inscrire":{
+            "registertitle": "S'inscrire",
+            "name": "Nom:",
+            "surname": "Prénom:",
+            "address": "Adresse:",
+            "phone": "Téléphone:",
+            "email": "Email:",
+            "submit": "Valider"
+    }
+}
