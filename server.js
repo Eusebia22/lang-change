@@ -1,16 +1,18 @@
 const express = require('express');
 const path = require("path");
 const app = express();
-const PORT = 3000;
+// const PORT = 3000;
 
-// app.use(express.static(__dirname));
 
-// app.listen(3000, () => {
-//   console.log("Server running on http://localhost:3000");
-// });
+
+
 
 // Serve static files (e.g., JSON, JS, CSS)
 app.use(express.static(__dirname));
+
+app.listen(3000, () => {
+  console.log("Server running on http://localhost:3000");
+});
 
 // Route for the index page
 app.get("/", (req, res) => {
@@ -28,6 +30,6 @@ app.get("/inscription.html", (req, res) => {
 });
 
 // Start the server
-app.listen(PORT, () => {
-  console.log(`Server running at http://localhost:${PORT}`);
-});
+// app.listen(PORT, () => {
+//   console.log(`Server running at http://localhost:${PORT}`);
+// });

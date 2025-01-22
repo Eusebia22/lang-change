@@ -1,3 +1,5 @@
+const languageSelect = document.getElementById("language-select");
+
 const translations = {
     en: "traduction/en.json",
     fr: "traduction/fr.json",
@@ -7,25 +9,25 @@ const translations = {
   };
   
 //  const defaultlangue = "en";
-  const languageSelect = document.getElementById("language-select");
-  
   const loadLangue = (lang = "en")=>{
-    const translatefile = translations[lang] || translations["en"];
   
-    fetch(translatefile)
+    const translateFile = translations[lang] || translations["en"];
+  
+    fetch(translateFile)
       .then((response) => {
+        const response = fetch(`/data?lang=${lang}`);
         if (!response.ok) {
-          throw new Error(`Error while charging file JSON: ${response.statusText}`);
+          throw new Error(`Error while charging file JSON ${translateFile}: ${response.status}`);
         }
         return response.json();
       })
 
       .then((data) => {
-        document.getElementById("nav-iproduct").textContent = data.header.product;
-        document.getElementById("nav-icontact").textContent = data.header.contact;
-        document.getElementById("nav-iinscrire").textContent = data.header.inscrire;
-        document.getElementById("product-title").textContent = data.index.title;
-        document.getElementById("product-description").textContent = data.index.description;
+        document.getElementById("iproduct").textContent = data.header.product;
+        document.getElementById("icontact").textContent = data.header.contact;
+        document.getElementById("iinscrire").textContent = data.header.inscrire;
+        document.getElementById("title").textContent = data.index.title;
+        document.getElementById("description").textContent = data.index.description;
         document.getElementById("nav-cproduct").textContent = data.header.product;
         document.getElementById("nav-ccontact").textContent = data.header.contact;
         document.getElementById("nav-cinscrire").textContent = data.header.inscrire;
