@@ -4,23 +4,21 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Contact</title>
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="../asset/css/style.css">
 </head>
 <body>
   <header>
     <nav>
+      <div id="language-select" class="inline">
+        <button data-lang="en">EN |</button>
+        <button data-lang="fr"> FR |</button>
+        <button data-lang="es"> ES |</button>
+        <button data-lang="it"> IT</button>
+      </div>  
       <ul>
-        <li style="list-style-type:none;">
-          <select id="language-select">
-            <option value="en">English</option>
-            <option value="fr">Français</option>
-            <option value="es">Español</option>
-            <option value="it">Italiano</option>
-          </select>
-        </li>
-        <li><a href="index.html" id="nav-cproduct">Products</a></li>
-        <li ><a href="#" id="nav-ccontact">Contact</a></li>
-        <li ><a href="inscrire.html" id="nav-cinscrire">Inscrire</a></li>
+        <li><a href="index.html" id="cproduct">Products</a></li>
+        <li ><a href="#" id="ccontact">Contact</a></li>
+        <li ><a href="inscrire.html" id="cinscrire">Inscrire</a></li>
     </ul>
   </nav>
 </header>
@@ -42,6 +40,6 @@
       <button type="submit" id="cbtns">Submit</button>
     </form>
   </main>
-  <script src="js/script.js" defer></script>
+  <script src="../asset/js/script.js" defer></script>
 </body>
 </html>

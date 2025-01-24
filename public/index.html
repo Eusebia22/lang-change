@@ -4,31 +4,29 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Index</title>
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="../asset/css/style.css">
 </head>
 <body>
     <header>
       <nav>
-        <ul>
-          <li style="list-style-type:none;">
-            <select id="language-select">
-              <option value="en">English</option>
-              <option value="fr">Français</option>
-              <option value="es">Español</option>
-              <option value="it">Italiano</option>
-            </select>
-          </li>
-      <li ><a href="#" id="iproduct">Products</a></li>
-      <li ><a href="contact.html" id="icontact">Contact</a></li>
-      <li ><a href="inscrire.html"id="iinscrire">Inscrire</a></li>
-      </ul>
+        <div id="language-select" class="inline">
+          <button data-lang="en">EN |</button>
+          <button data-lang="fr"> FR |</button>
+          <button data-lang="es"> ES |</button>
+          <button data-lang="it"> IT</button>
+        </div>    
+    <ul>
+      <li ><a href="#" id="product">Products</a></li>
+      <li ><a href="contact.html" id="contact">Contact</a></li>
+      <li ><a href="inscrire.html"id="inscrire">Inscrire</a></li>
+    </ul>
     </nav>
   </header>
   <main id="content">
     <h1 id="title">Weelcome to Our Product </h1>
     <p id="description">Description of the Product.</p>
   </main>
-  <script src="js/script.js" defer></script>
+  <script src="../asset/js/script.js" defer></script>
 </body>
 </html>
 

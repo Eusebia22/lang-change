@@ -1,35 +1,23 @@
 const express = require('express');
-const path = require("path");
+const path = require('node:path');
+const fs = require('fs');
+const { error } = require('node:console');
 const app = express();
-// const PORT = 3000;
 
+app.use(express.static('public'));
 
-
-
-
-// Serve static files (e.g., JSON, JS, CSS)
-app.use(express.static(__dirname));
-
-app.listen(3000, () => {
-  console.log("Server running on http://localhost:3000");
+app.get('/data', (req,res)=>{
+  const lang = req.query.lang || 'en';
+  const filePath = path.join(__dirname,`/asset/traduction/${lang}.json`);
+  if (fs.existsSync(filePath)){
+    const data = JSON.parse(fs.readFileSync(filePath,'utf-8'));
+    res.json(data);
+    }else{
+      res.status(404).json({error:'Language file not found'});
+    }
 });
 
-// Route for the index page
-app.get("/", (req, res) => {
-  res.sendFile(path.join(__dirname, "index.html"));
+const PORT = 3000;
+app.listen(PORT, () => {
+  console.log(`Server running at http://localhost:${PORT}`);
 });
-
-// Route for the contact page
-app.get("/contact.html", (req, res) => {
-  res.sendFile(path.join(__dirname, "contact.html"));
-});
-
-// Route for the sign-up page
-app.get("/inscription.html", (req, res) => {
-  res.sendFile(path.join(__dirname, "inscrire.html"));
-});
-
-// Start the server
-// app.listen(PORT, () => {
-//   console.log(`Server running at http://localhost:${PORT}`);
-// });
